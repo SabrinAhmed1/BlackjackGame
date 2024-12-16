@@ -16,7 +16,10 @@ public enum Suit {
     /** A symbolic character to represent the Suit */
     private char symbol;
     
-    /** Creates a Suit with a given Symbol */
+    /** 
+     * Creates a Suit with a given Symbol 
+     * @param symbol the symbol for that Suit
+     */
     private Suit(char symbol) {
         this.symbol = symbol;
     }
