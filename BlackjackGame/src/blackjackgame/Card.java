@@ -16,11 +16,11 @@ public class Card {
     /* Constructors */
     /**
      * Creates a new Card with a given suit and rank
-     * @param suit the suit of the card
      * @param rank the rank of the card
+     * @param suit the suit of the card
      * @throws NullPointerException if suit and/or rank are null
      */
-    public Card(Suit suit, Rank rank) {
+    public Card(Rank rank, Suit suit) {
         // Checks that rank and suit are both not null
         if(suit == null || rank == null) {
             throw new NullPointerException("Suit and/or Rank cannot be null");
@@ -42,6 +42,17 @@ public class Card {
      */
     public Rank getRank() {
         return rank;
+    }
+    
+    /* Other Methods */
+    /**
+     * Returns a string representation of this card with the symbols for rank 
+     * and suit.
+     * @return a string representation of this card
+     */
+    @Override
+    public String toString() {
+        return rank.toString() + suit.toString();
     }
     
     
