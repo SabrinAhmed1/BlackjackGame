@@ -9,7 +9,7 @@ package blackjackgame;
  * @author Sabrin Ahmed
  */
 public class Card {
-    /* Data Feilds */
+    /* Data Fields */
     private Suit suit;
     private Rank rank;
     
